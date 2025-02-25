@@ -1,0 +1,92 @@
+{
+    "冠星": {
+        "next": [
+            "切磋"
+        ]
+    },
+    "切磋": {
+        "recognition": "OCR",
+        "expected": "切磋",
+        "action": "Click",
+        "next": "开始切磋"
+    },
+    "开始切磋": {
+        "recognition": "OCR",
+        "expected": "开始切磋",
+        "action": "Click",
+        "next": "跳过"
+    },
+    "跳过": {
+        "recognition": "OCR",
+        "roi": [
+            98,
+            527,
+            519,
+            43
+        ],
+        "expected": "跳过",
+        "action": "Click",
+        "pre_wait_freezes": 200,
+        "next": [
+            "进入第2场"
+        ]
+    },
+    "事件选择": {
+        "next": [
+            "进入第3场",
+            "结束切磋"
+        ],
+        "timeout": 5000
+    },
+    "进入第2场": {
+        "recognition": "OCR",
+        "roi": [
+            98,
+            527,
+            519,
+            43
+        ],
+        "expected": "进入第2场",
+        "action": "Click",
+        "pre_wait_freezes": 200,
+        "next": [
+            "事件选择"
+        ]
+    },
+    "进入第3场": {
+        "recognition": "OCR",
+        "roi": [
+            98,
+            527,
+            519,
+            43
+        ],
+        "expected": "进入第3场",
+        "action": "Click",
+        "pre_wait_freezes": 200,
+        "next": [
+            "结束切磋"
+        ]
+    },
+    "结束切磋": {
+        "recognition": "OCR",
+        "roi": [
+            98,
+            527,
+            519,
+            43
+        ],
+        "expected": "结束切磋",
+        "action": "Click",
+        "pre_wait_freezes": 200,
+        "next": [
+            "检测结束",
+            "切磋"
+        ]
+    },
+    "检测结束": {
+        "recognition": "OCR",
+        "expected": "1000/1000",
+        "action": "StopTask"
+    }
+}

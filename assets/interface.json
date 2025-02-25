@@ -1,4 +1,8 @@
 {
+    "name": "MaaTest",
+    "custom_title": "MAA绝对",
+    "default_controller": "adb",
+    "mirrorchyan_rid": "MaaTest",
     "controller": [
         {
             "name": "安卓端",
@@ -30,8 +34,9 @@
     ],
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "打冠星",
+            "entry": "冠星",
+            "check": true
         },
         {
             "name": "选项任务",
