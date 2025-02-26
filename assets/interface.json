@@ -1,9 +1,9 @@
 {
-    "name": "MaaTest",
-    "custom_title": "MaaTest",
+    "name": "MaaJdyy",
+    "custom_title": "MaaJdyy",
     "default_controller": "adb",
-    "mirrorchyan_rid": "MaaTest",
-    "url": "https://github.com/Gugugu729/testjuedui",
+    "mirrorchyan_rid": "MaaJdyy",
+    "url": "https://github.com/Gugugu729/MaaJdyy",
     "controller": [
         {
             "name": "安卓端",
