@@ -69,6 +69,11 @@ def install_chores():
         install_path,
     )
 
+    shutil.copy2(
+        working_dir / "install-deps.ps1",
+        install_path,
+    )
+
 
 if __name__ == "__main__":
     install_deps()
