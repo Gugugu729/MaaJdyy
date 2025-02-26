@@ -3,7 +3,12 @@
     "custom_title": "MaaTest",
     "default_controller": "adb",
     "mirrorchyan_rid": "MaaTest",
+    "url": "https://github.com/Gugugu729/testjuedui",
     "controller": [
+        {
+            "name": "安卓端",
+            "type": "Adb"
+        },
         {
             "name": "桌面端",
             "type": "Win32",

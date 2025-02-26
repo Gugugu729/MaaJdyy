@@ -12,7 +12,7 @@ jobs:
         with:
           filetype: latest-release
           filename: "MAATEST-win-x86_64-*.zip"
-          pick_files: '["resource", "interface.json", "presets", "MaaTest.exe"]'
+          pick_files: '["resource", "interface.json"]'
           exclude_files: '["*model/ocr/**"]'
           mirrorchyan_rid: MaaTest
 
