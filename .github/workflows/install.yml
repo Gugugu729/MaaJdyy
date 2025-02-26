@@ -83,12 +83,12 @@ jobs:
       - name: Install
         shell: bash
         run: |
-          python ./install.py ${{ needs.meta.outputs.tag }}
-          cp ./MFA/MFAWPF.exe ./install
-          jq --arg version ${{ needs.meta.outputs.tag }} '. + {"version": $version}' ./assets/interface.json > ./install/interface.json
-          mv ./install/MFAWPF.exe ./install/MaaTest.exe
-          cp ./assets/resource/image/logo.ico ./install
-
+              python ./install.py ${{ needs.meta.outputs.tag }}
+              cp ./MFA/MFAWPF.exe ./install/MaaYuan.exe
+              mkdir -p ./install/DLL
+              cp -r ./MFA/DLL/* ./install/DLL/
+              jq --arg version_name "testjuedui" --arg url ""https://github.com/Gugugu729/testjuedui"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' ./assets/interface.json > ./install/interface.json
+    
       - uses: actions/upload-artifact@v4
         with:
           name: MaaTest-win-${{ matrix.arch }}
