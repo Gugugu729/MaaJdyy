@@ -75,3 +75,4 @@ if __name__ == "__main__":
     install_chores()
 
     print(f"Install to {install_path} successfully.")
+
